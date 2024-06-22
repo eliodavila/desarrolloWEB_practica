@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Página 1</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            font-size: calc(1em + 1vw);
+            overflow: hidden;
+        }
+        header, nav, section, footer {
+            flex-shrink: 0;
+        }
+        header {
+            flex: 0 0 15%;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav {
+            flex: 0 0 10%;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section {
+            flex: 0 0 65%;
+            width: 100%;
+            flex: 1;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+        article {
+            height: 100%;
+            width: 80%;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        aside {
+            height: 100%;
+            width: 20%;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer {
+            flex: 0 0 10%;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>Encabezado</header>
+    <nav>Menú</nav>
+    <section>
+        <article>Artículo 1</article>
+        <aside>Barra derecha</aside>
+    </section>
+    <footer>Pie</footer>
+</body>
+</html>
+<!--
+<html>
+<style>
+body
+{
+padding:0;
+margin:0;
+width:100%;
+height:100%;
+text-align:center;
+font-family: sans-serif;
+font-weight: bold;
+}
+
+header
+{
+height: 20%;
+width: 100%;
+background-color: gray;
+float:none;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+nav
+{
+height: 10%;
+width: 100%;
+background-color: orange;
+float:none;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+section
+{
+height: 65%;
+width: 100%;
+background-color: blue;
+float:none;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+article
+{
+height: 94%;
+width: 68%;
+background-color: lightblue;
+float:left;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+aside
+{
+height: 94%;
+width: 30%;
+background-color: green;
+float: right;
+display:flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+footer
+{
+height: 5%;
+width: 100%;
+background-color: black;
+position:absolute;
+color:white;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+</style>
+
+<header> Encabezado </header>
+<nav> Menú </nav>
+<section>
+<article> Articulo 1 </article>
+<aside> Barra derecha</aside>
+</section>
+<footer> Pie </footer>
+</html>
+-->

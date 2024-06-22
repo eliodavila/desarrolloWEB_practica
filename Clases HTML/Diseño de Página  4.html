@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            height: 100%;
+        }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            font-size: calc(1em + 1vh);
+        }
+        header {
+            height: 10%;
+            width: 100%;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav {
+            height: 10%;
+            width: 100%;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sec1 {
+            height: 60%;
+            width: 50%;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+        }
+        .sec2 {
+            height: 80%;
+            width: 80%;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        article {
+            height: 70%;
+            width: 100%;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .article-title {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: lightblue;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+        aside {
+            height: 70%;
+            width: 30%;
+            background-color: green;
+            float: right;
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .aside-title {
+            margin: 0;
+            padding: 0;
+        }
+        .sec2-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        footer {
+            height: 4.5%;
+            width: 100%;
+            background-color: black;
+            position: relative;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>Encabezado</header>
+    <br>
+    <nav> Menú </nav>
+    <br>
+    <article>
+        <div class="article-title">Artículo 1</div>
+        <section class="sec1">Sección 1</section>
+        <aside>
+            <p class="aside-title">Bloque</p>
+            <div class="sec2-container">
+                <section class="sec2">Sección 2</section>
+            </div>
+        </aside>
+    </article>
+    <br>
+    <footer> Pie </footer>
+</body>
+</html>
+
+<!--
+<html>
+<style>
+body
+{
+padding:0;
+margin:0;
+width:100%;
+height:100%;
+text-align:center;
+font-family: sans-serif;
+font-weight: bold;
+}
+
+header
+{
+height: 10%;
+width: 100%;
+background-color: gray;
+float:none;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+nav
+{
+height: 10%;
+width: 100%;
+background-color: orange;
+float:none;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+.sec1
+{
+height: 60%;
+width: 50%;
+background-color: blue;
+float:left;
+display:flex;
+justify-content: center;
+align-items: center;
+margin:30px;
+
+}
+
+.sec2
+{
+height: 80%;
+width: 80%;
+background-color: blue;
+margin:40px;
+
+}
+
+article
+{
+height: 70%;
+width: 100%;
+background-color: lightblue;
+text-align:left;
+}
+
+aside
+{
+height: 70%;
+width: 30%;
+background-color: green;
+float: right;
+margin:30px;
+display:table;
+justify-content: top;
+align-items: top;
+}
+
+footer
+{
+height: 4.5%;
+width: 100%;
+background-color: black;
+position:relative;
+color:white;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+</style>
+<header>Encabezado</header>
+<br>
+<nav> Menú </nav>
+<br>
+<article>Artículo 1
+	<section class="sec1">Sección 1</section>
+<aside> Bloque
+	<section class="sec2">Sección 2</section>
+</aside>
+</article>
+<br>
+<footer> Pie </footer>
+</html>
+-->

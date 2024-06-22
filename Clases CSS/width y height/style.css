@@ -1,0 +1,12 @@
+div{
+    background-color:red;
+    width: 100PX;
+    height: 100px;
+}
+input{
+    /*Generalmente se coloca en porcentaje, para no arruinar la dimensión del objeto, esto es útil para cuando se intenta mostrar en un dispositivo móvil (responsive)*/
+    width: 100%;
+}
+form{
+    width: 400px;
+}

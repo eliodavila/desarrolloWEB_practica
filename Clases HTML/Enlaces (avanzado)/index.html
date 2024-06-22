@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset y Legend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <h2>Formulario de contacto</h2>
+        <!--SIMPLE INPUT-->
+        <fieldset>
+            <legend>INFORMACIÓN BÁSICA</legend>
+            <div class="form_input">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" name="" id="nombre" placeholder="Juan Perez">
+            </div>
+            <div class="form_input">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" name="" id="email" placeholder="ejemplo@gmail.com">
+            </div>
+            <div class="form_input">
+                <label for="asunto">Asunto</label>
+                <input type="text" name="" id="asunto" placeholder="Breve descripción...">
+            </div>
+        </fieldset>
+            <!--Select y Option-->
+            <div class="form_input">
+                <label for="tipoUsuario">Tipo de Usuario</label>
+                <select name="type-of-user" id="tipoUsuario">
+                    <option value="user1">Seguidor</option>
+                    <option value="user2">Empresas</option>
+                    <option value="user3">Consultor</option>
+                    <option value="user4">Otros</option>
+                </select>
+            </div>
+        <!--DataList-->
+        <div class="form_input">
+            <label for="referentePersonal">Referente</label>
+            <input type="text" name="referente" id="referentePersonal" list="referente">
+            <datalist name="tipo-referente" id="referente">
+                <option value="Soy Dalto">Un creador de contenido</option>
+                <option value="Juan Perez">Un Amigo</option>
+                <option value="Facebook">Redes Sociales</option>
+            </datalist>
+        </div>
+        <!--TextArea-->
+        <div class="form_input">
+            <!--diferencia con readonly y disabled
+            con el primero no se puede modificar, pero se puede enfocar el campo, se puede enviar el campo; en cambio el segundo no se puede modificar, ni enfocar el campo no enviar la información-->
+            <label for="mensaje">Mensaje</label>
+            <textarea rows="8" name="" id="mensaje" placeholder="Deja tu mensaje..." maxlength="140"></textarea><!--disabled y readonly-->
+            <!--Para seleccionar el input o elemento del formulario, desde el label, primero se debe colocar un id en el elemento y en el label, colocar for y colocar el nombre del elemento-->
+        </div>
+        <!--CheckBox-->
+        <div class="form_input">
+            <label for="termino">Acepto los <a href="terms.html" target="_blank">términos y condiciones</a></label>
+            <input class="checkbox" type="checkbox" name="" id="termino">
+            <!--Otra forma de hacer click, es decir asociar label con input es colocar el input en el interior del label-->
+        </div>
+    </form>
+</body>
+</html>

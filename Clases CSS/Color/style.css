@@ -1,0 +1,13 @@
+.box{
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 255,0.5);/*255 es el valor maximo por 8 bits o un octeto, entonces en la asignación de color sería rojo-verde-azul*/
+    margin: 20px;
+    border-top: 5px solid #0000ff;/*Por otro lado en hexadecimal, es también con los colores básicos del rgp pero en sistema hexadecimal, donde cada color ocupa dos dígitos, que también darían las 256 opciones por color*/
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}

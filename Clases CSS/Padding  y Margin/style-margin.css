@@ -1,0 +1,19 @@
+body{
+    margin:0;
+    display: flex;
+    /*son como cajas flotantes*/
+    flex-direction: column;
+}
+.box{
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    /*
+    Margin es el margen entre objetos dentro del elemento
+    
+    El margin colabs permite que se pueda asignar el mismo margen incluso si el otro objeto tiene margen, es decir toma el margen mayor de 2 elementos
+
+    igual aplica el shorthand, que es margen arriba, derecha, abajo e izquierda
+    */
+}

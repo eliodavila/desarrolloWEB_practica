@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0 1rem;
+        }
+
+        form {
+            max-width: 600px; /* Limita el ancho máximo del formulario */
+            margin: 0 auto; /* Centra el formulario horizontalmente */
+        }
+
+        label, input, textarea, select {
+            width: 100%; /* Asegura que los inputs y textarea ocupen el 100% del ancho del contenedor */
+            display: block; /* Asegura que cada label, input, textarea y select ocupen su propia línea */
+            box-sizing: border-box; /* Incluye el padding y borde en el ancho total */
+            margin-bottom: 10px; /* Añade espacio vertical entre los elementos del formulario */
+        }
+
+        #edad {
+            width: auto;
+            padding: 5px; /* Añade un poco de espacio interno */
+        }
+
+        .formulario_registro {
+            margin: 5vh 0; /* Añade espacio vertical entre los elementos del formulario */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center; /* Centra el contenido horizontalmente */
+        }
+
+        input[type="submit"] {
+            width: auto; /* Permite que el botón ajuste su ancho automáticamente según el contenido */
+            display: inline-block; /* Asegura que el botón se comporte como un elemento en línea pero permite ajustar el tamaño */
+            padding: 10px 20px; /* Agrega espacio interno alrededor del texto del botón: 10px arriba y abajo, 20px a los lados */
+            font-size: 1em; /* Establece el tamaño de la fuente del texto del botón en relación al tamaño base de la fuente del documento */
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .radio-group input,
+        .checkbox-group input {
+            margin-right: 10px; /* Añade un margen a la derecha de los inputs de radio y checkbox */
+        }
+
+        @media (max-width: 600px) {
+            form {
+                width: 90vw; /* Asegura que el formulario ocupe el 90% del ancho de la ventana en pantallas pequeñas */
+            }
+
+            input[type="submit"] {
+                width: 100%; /* Asegura que el botón ocupe el 100% del ancho del formulario en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Encuesta</h1>
+    <form action="" method="">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <div class="formulario_registro">
+                <label for="edad">Edad</label>
+                <input required type="number" name="edad" id="edad" placeholder="" min="0" max="50">
+            </div>
+            <div class="formulario_registro">
+                <label for="genero">Género</label>
+                <div class="radio-group">
+                    <input type="radio" name="genero" value="masculino"><label for="genero">Masculino</label>
+                    <input type="radio" name="genero" value="femenino"><label for="genero">Femenino</label>
+                    <input type="radio" name="genero" value="otro"><label for="genero">Otro</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <div class="formulario_registro">
+                <label for="intereses">Intereses</label>
+                <div class="checkbox-group">
+                    <input required type="checkbox" name="intereses" id="" value="deportes"><label for="intereses">Deportes</label>
+                    <input required type="checkbox" name="intereses" id="" value="musica"><label for="intereses">Música</label>
+                    <input required type="checkbox" name="intereses" id="" value="tecnologia"><label for="intereses">Tecnología</label>
+                </div>
+            </div>
+            <div class="formulario_registro">
+                <label for="satisfaccion">Nivel de satisfacción</label>
+                <select name="satisfaccion" id="satisfaccion">
+                    <option value="muy_satisfecho">Muy satisfecho</option>
+                    <option value="satisfecho">Satisfecho</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="insatisfecho">Insatisfecho</option>
+                    <option value="muy_insatisfecho">Muy insatisfecho</option>
+                </select>
+            </div>
+        </fieldset>
+        <div class="button-container"> <!-- Contenedor para centrar el botón -->
+            <input type="submit" name="" id="" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>

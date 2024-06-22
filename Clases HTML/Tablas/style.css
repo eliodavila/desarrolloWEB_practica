@@ -1,0 +1,65 @@
+td,th{
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 9px;
+    font-family: sans-serif;
+    border: none;
+    border-bottom: 1px solid #0004;
+}
+
+thead{
+    background-color: #0F0;
+    color: #fff;
+}
+
+tbody{
+    color: #666;
+}
+table{
+    width: 100%;
+    /*border-collapse: collapse;*/
+    border-spacing: 10px;
+    border: 1px solid #000;
+    max-width: 500px;
+    margin:auto;
+    box-shadow: 0px 0px 15px #000;
+    margin-top:20px;
+}
+.header_total, .dato_total{
+    border: none;
+    padding: 12px;
+    font-size:1.2em;
+}
+caption{
+
+    font: italic small-caps bolder 1.5em/2 sans-serif;
+
+    /*
+    font: [font-style] [font-variant] [font-weight] font-size/line-height font-family;
+
+    font: italic small-caps bold 12px/1.5 Arial, sans-serif;
+
+    Propiedades relacionadas
+    
+    Existen varias propiedades relacionadas con la propiedad “font” en CSS que te permiten establecer estilos de fuente de manera más específica. Algunas de estas propiedades son:
+    
+    font-style: Especifica el estilo de la fuente. Puede ser “normal”, “italic” o “oblique”.
+
+    font-variant: Especifica la variante de la fuente. Puede ser “normal” o “small-caps”.
+
+    font-weight: Especifica el grosor de la fuente. Puede ser “normal”, “bold” o un valor numérico entre 100 y 900.
+
+    font-size: Especifica el tamaño de la fuente. Puede ser un valor en píxeles o en unidades relativas como “em” o “rem”.
+
+    line-height: Especifica la altura de línea. Puede ser un valor numérico o una unidad de medida.
+
+    font-family: Especifica la familia de fuentes a utilizar. Puede ser una o varias familias de fuentes separadas por comas.
+    */
+}
+.primerasColumnas{
+    background-color: rgb(255, 0, 0);
+}
+.ultimaColumna{
+    background-color: rgb(255 255 0 / 50%);
+    /*rgba(255, 255, 0, 0.05);*/
+}

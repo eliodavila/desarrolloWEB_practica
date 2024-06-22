@@ -1,0 +1,28 @@
+body{
+    background-color: red;
+    margin: 0;
+}
+img{
+    width: 300px;
+}
+div.box{
+    width: 300px;
+    height: 450px;
+    background: radial-gradient(transparent,#000a);
+    /*
+    background: conic-gradient(transparent,#000a);
+       /*background: linear-gradient(to right,transparent,#000a);*/
+    margin: 0;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}

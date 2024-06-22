@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+    La etiqueta define una tabla HTML.<table>
+
+    Una tabla HTML consta de un elemento y uno o varios elementos <tr>, <th> y <td>.<table>
+
+    El elemento <tr> define una fila de tabla, el elemento <th> define un encabezado de tabla y el elemento <td> define una celda de tabla.
+
+    Una tabla HTML también puede incluir elementos <caption>, <colgroup>, <thead>, <tfoot> y <tbody>.
+    -->
+    <table>
+        <colgroup>
+            <col span="2" class="primerasColumnas">
+            <col class="ultimaColumna">
+          </colgroup>
+          <!--
+          La etiqueta especifica un grupo de una o más columnas en una tabla para el formato.<colgroup>
+
+          La etiqueta es útil para aplicar estilos a columnas enteras, en lugar de repetir los estilos para cada celda, para cada fila.<colgroup>
+
+          Nota: La etiqueta debe ser un elemento secundario de un elemento <table>, después de cualquier elemento <caption> y antes de cualquier <thead>, <tbody>, <tfoot> y <tr> Elementos.<colgroup>
+
+          Adicional: Para definir diferentes propiedades de una columna dentro de un archivo , Utilice la etiqueta <col> dentro de la etiqueta.<colgroup><colgroup>
+          -->
+        <caption>PRECIO DE PRODUCTOS</caption>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Costo</th>
+                <th>Unidades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pera</td>
+                <td>7</td>
+                <td>1kg</td>
+            </tr>
+            <tr>
+                <td>Papaya</td>
+                <td>10</td>
+                <td>1kg</td>
+            </tr>
+            <tr>
+                <td>Manzana</td>
+                <td>2</td>
+                <td>1Unidad</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="header_total">Total</th>
+                <td colspan="2" class="dato_total">19</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    color: #ddd;
+    background-color: #222;
+}
+h2{
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 22px;
+    padding: 10px;
+    font-size: 1.4em;
+}
+form{
+    background-color: transparent;
+    padding: 20px 0;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 55px 1px #fff2;
+    border-radius: 8px;
+    margin-top: 50px;
+    font-size: 16px;
+}
+/*Se permite colocar selector a varios elementos*/
+input,textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border:none;
+    border: 1px solid #666;
+    box-shadow: 0px 0px 15px 3px #fff1;
+    background-color: transparent;
+    border-radius: 4px;
+    color:#ddd;
+}
+textarea{
+    resize: none;
+    min-width: 100%;
+    min-height: 100px; /*Esto se puede suprimir por rows en el lado del html*/
+    /*max-height: 200px;*/
+    font-family: sans-serif;
+    /*margin-top: 4px;*/
+    /*form-sizing: content;*/
+}
+div.form_input{
+    padding: 6px 20px;
+}
+label{
+    font-size: 0.88em;
+    line-height: 3;
+}
+.checkbox{
+    width: auto;
+    height: 10px;
+}

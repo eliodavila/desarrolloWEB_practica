@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+    <style>
+        form{
+            width: 50vw;
+            /*margin: 0 auto;*/ /* Centramos el formulario horizontalmente */
+        }
+        input{
+            width: 100%;
+            padding: 5px;
+        }
+        div{
+            margin: 5vh;
+        }
+        .button-container {
+            display: flex;
+            /*justify-content: center;*/ /* Centra el contenido horizontalmente */
+        }
+        input[type="submit"] {
+            width: auto;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="" method="">
+        <div class="formulario_registro">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Juan Perez">
+        </div>
+        <div class="formulario_registro">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com">
+        </div>
+        <div class="formulario_registro">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña">
+        </div>
+        <div class="button-container"> <!-- Contenedor para centrar el botón -->
+            <input type="submit" name="" id="" value="Registrar">
+        </div>
+    </form>
+</body>
+</html>

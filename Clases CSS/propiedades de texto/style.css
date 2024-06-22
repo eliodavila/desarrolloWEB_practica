@@ -1,0 +1,35 @@
+p{
+    /*Para el color, si bien se puede utilizar colores como red, blue, entre otros pero por compatibilidad de navegadores y para que todos entiendan el color lo recomendable es aplicar bajo formatos establecidos como ser rgb,hexadecimal,hsl, hwb*/
+    color:rgb(255, 0, 0);
+    /*Aquí se configura el tipo de fuente, en el caso de ser una palabra, como por decir "Tahoma", no es necesario usar comilla simple, pero cuando son palabras separadas, si es necesaria la comilla simple
+    Otra particularidad es que si no sea compatible un tipo de fuente en el navegador, se van colocando más, siempre separando por una coma ",", como por ejemplo "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"*/
+    font-family: Montserrat;
+    /*define el tamaño de la fiente, por ahora una forma genérica absoluta es utilizando la medida px*/
+    font-size: 20px;
+    /*Aquí se define el grosor de la letra, esto depende del tipo de fuente, pues cada fuente tiene su grosor según lo haya hecho el autor o creador esto puede oscilar entre 100 y 900... para poner negrita estaría como "bold" sería como medida 700 y "bolder" aumentaría 100 más, es decir 800*/
+    font-weight:100;
+    /*El estilo de letra es aquí sobretodo si colocar normal o cursiva*/
+    font-style: normal;
+    /*La alineación de la letra es hacia la derecha, hacia la izquierda, centrado, justificado, etc*/
+    text-align: start;
+    /*Permite colocar subrayado al texto, esto puede ser bajo el texto, sobre el texto o entre el texto (tachado). También se permite colocar dos o tres tipos de subrayado juntos, esto sin utilizar comas o elementos que separen*/
+    text-decoration: underline;
+    /*Esto permite la altura entre líneas de texto*/
+    line-height: 2;
+    /*Permite colocar el espaciado entre palabras*/
+    letter-spacing: 1px;
+    /*Permite colocar letras en mayúsculas, minúsculas, entre otras cosas*/
+    text-transform:uppercase;
+    /*Lo que hace es cortar las palabras*/
+    word-wrap:break-word;
+    /*Esto permite que un párrafo en la visualización previa no se muestre todo, sino que permita al usuario poder hacerlo si despliega*/
+    word-break:keep-all;
+}
+h1{
+    text-align: center;
+    text-decoration: underline line-through;
+}
+span{
+    text-decoration: line-through;
+    color: rgb(165, 42, 42);
+}

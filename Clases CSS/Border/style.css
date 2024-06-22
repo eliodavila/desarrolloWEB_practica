@@ -1,0 +1,34 @@
+div{
+    background: red;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    border: 20px solid blue;
+    border-radius: 20px 40px 60px 80px;
+    /*
+    Esta es la propiedad shorthand de border donde se define width, color y estilo
+    También existe border-top, border-right, border-bottom y border left
+    
+    En el border-radius contempla el shorthand, otras tipos de border-radius son top-left, top-right, bottom-right y bottom-left
+    */
+}
+body{
+    background-color: black;
+}
+input{
+    margin: 5px; /*margen*/
+    padding: 6px 9px;/*espacio con el borde*/
+    border:none;
+    border-top: 1px solid greenyellow;
+    border-left: 1px solid greenyellow;
+    background-color: transparent;
+    color: greenyellow;
+}
+.boton-enviar{
+    margin: 15px;
+    border: 2px solid greenyellow;
+}

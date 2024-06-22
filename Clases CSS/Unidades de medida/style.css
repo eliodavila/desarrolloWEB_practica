@@ -1,0 +1,77 @@
+html{
+    box-sizing: border-box;
+    *,*::before,*::after{
+        box-sizing: inherit;
+    }
+}
+body{
+    font-size: 40px;
+    margin: 0;
+}
+.informacion{
+    background: #c8c8c8;
+    /*padding: 20px;*/
+    text-align: justify;
+    font-family: sans-serif;
+    border-left: 10px solid rgb(100, 100, 100);
+    font-size: 15px;
+    /*
+    -viewport-height (vh) y viewport-width (vw) lo que hace es establecer un alto y un ancho del elemento, en relación a la ventana, es decir que 100vh o 100vw indica todo el entorno de la ventana.
+    Es importante notar que esto es de bastante utilidad para las ventanas modales, además hay que revisar el margin en el elemento, en el div y en el body
+
+    Otras de las medidas que se requiere analizar es vmax y vmin.
+    vmin (viewport-min) = Medida porcentual de la dimensión menor de la ventana gráfica.
+    vmax (viewport-max) = Medida porcentual de la dimensión mayor de la ventana gráfica.
+    https://www.yunbitsoftware.com/blog/2017/06/22/viewport-units-css-que-es/#:~:text=vmin%20(viewport%2Dmin)%20%3D,mayor%20de%20la%20ventana%20gr%C3%A1fica.
+    */
+    height: 80vh;
+    width:80vw;
+    margin: 0;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 10vh;
+    /*
+    Para recordar, el box-sizing es ajustar el modelo de caja sin que esta sea afectada por el border y el padding
+    https://youtu.be/Vx854s9YE78
+    https://midu.dev/que-es-y-para-que-sirve-box-sizing-border-box/
+    */
+    padding: 20px;
+}
+h1{
+    margin: 0;
+    font-size: 1.5rem;/*En el caso del rem, tendría la misma especificación del "em" pero esta vez sería heredar del elemento raiz*/
+}
+span{
+    color:#999;
+    font-size: 2vmin;
+    font-weight: 100;
+}
+.ejercicio_general{
+    color:#555;
+    background-color: rgb(150, 150, 150);
+    color:white;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+    width: 90%;
+    font-size: 1.5em;/*"em" es una medida que hace en referencia al elemento padre, por ejemplo si el elemento padre es 20px, el hijo si está con 1em también sería em, pero si está con 2em sería una medida de 40px, es decir que sería multiplicar el valor del em por el prefijo (2em=2*medidaPadre)
+    Si un elemento no tiene medida, este adquirirá la medida que tiene el padre, es decir heredará ese atributo
+    */
+}
+/*
+Existen medidas absolutas y relativas.
+Con respecto a las medidas absolutas, existen aquellas que pueden ser configurables en dispositivos, para responsive, como ser px, pc, pt, cpmax, entre otros; además de otras que son físicas, cómo ser cm, mm, in que permiten poder imprimir después.
+
+Con respecto a las medidas relativas el porcentaje (%) nos permite redimensionar según el elemento que lo contiene, en este caso el párrafo se redimensiona al 50% siempre, considerando el div que lo contiene
+*/
+.parrafo_vmax_vmin{
+    width: 20vmax;
+    height: 20vmin;
+    font-size: 5vmax;
+/*
+    Otras de las medidas que se requiere analizar es vmax y vmin.
+    vmin (viewport-min) = Medida porcentual de la dimensión menor de la ventana gráfica.
+    vmax (viewport-max) = Medida porcentual de la dimensión mayor de la ventana gráfica.
+    https://www.yunbitsoftware.com/blog/2017/06/22/viewport-units-css-que-es/#:~:text=vmin%20(viewport%2Dmin)%20%3D,mayor%20de%20la%20ventana%20gr%C3%A1fica.
+*/
+}

@@ -1,0 +1,42 @@
+.formulario{
+    background-color: red;
+    padding: 30px;/*Esto quiere decir que el padding será el mismo para los cuatro lados*/
+    /*
+    Padding es la separación entre el contenido y la caja
+
+    padding: 20px 50px 0 40px;
+
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 0;
+    padding-left: 40px;
+
+    Si se coloca 4 valores por separado, esto hará que el padding sea top-right-bottom-left
+
+    Si se colocara 2 valores por separado, esto sería vertical-horizontal
+    
+    Toda esto es una propiedad del shorthand
+    */
+}
+.formulario_input{
+    /*padding: 9px 10px;*/
+    width: 90%;
+    background: black;
+    color: red;
+    margin: 10px;
+}
+
+.formulario_submit{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: red;
+    color:white;
+    width: 50%;
+}
+/*
+BOX MODEL (MODELO DE LA CAJA)
+content --> contenido de la caja
+padding --> relleno de la caja
+border --> línea que rodea tanto al content como al padding (estilo, color y grosor)
+margin --> separación de la caja con otros elementos
+*/

@@ -1,0 +1,22 @@
+/*
+    Selector por elemento: consiste en buscar el elemento html que se llama así y modificarlo
+*/
+p{
+    color:#ff0000;
+    font-size: 16px;
+}
+span{
+    color:rgb(0, 0, 255)
+}
+/*
+    Selector por clase, a diferencia del anterior, se coloca "." por delante y se coloca el nombre de la clase... es útil para utilizar a muchos elementos
+*/
+.ingrediente-faltante{
+    color:green
+}
+/*
+    Selector por id, a diferencia del anterior, se coloca "#" por delante y se coloca el nombre del identificador... es útil para utilizar a un único elemento, puesto que ese id no se repetirá en ningún otro lado sino generará conflictos más adelante
+*/
+#ingrediente-secreto{
+    color:blueviolet
+}

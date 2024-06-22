@@ -1,0 +1,25 @@
+body{
+    background-color: #333;
+    color: #ddd;
+    /*font: normal normal 100 50px 2 sans-serif;*/
+    font: normal normal normal 20px/1.2 sans-serif, georgia;
+}
+details{
+    background-color: transparent;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+details[open]{
+    border: 1px solid #00f;
+    background-color: #555;
+    font-weight: normal;
+    padding: 9px;
+    font-size: 0.8em;
+}
+summary{
+    background-color: transparent;
+    border: 1px solid #ddd;
+}
+ul{
+    font-weight: 100;
+}

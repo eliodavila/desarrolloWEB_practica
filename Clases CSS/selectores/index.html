@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <!--
+        Como archivo externo CSS: Es la forma más eficiente, permite organizar por separado todo lo relacionado a CSS.
+
+        Inicialmente se comienza con la etiqueta link en HEAD dentro de html, el atributo "rel" permite indicar la relación que el archivo css tendrá con el html, en el caso del css será como "stylesheet" o también llamada hoja de estilo, luego el atributo href que permite ubicar el archivo css en cuestión.
+
+        En el archivo css se pone lo que se colocó anteriormente en la etiqueta "style" dentro de body, es decir todo lo relacionado a css.
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>INGREDIENTES</h1>
+    <!--
+        La aplicación del css se aplica colocando style, en las formas que más adelante se explicará.
+
+        <p style="color: blue;font-size: 16px;">
+        aquí se presentar css como un atributo dentro de la etiqueta del elemento
+    -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate distinctio corrupti minus quo itaque ea quaerat tempore, illo obcaecati, alias, sapiente at. Beatae distinctio officiis nulla, unde laboriosam ex?
+    </p><!--En línea: la configuración de CSS, pero no es una buena práctica, primero por la desorganización, también porque termina siendo extenso si se tiene que modificar componentes del html-->
+    <!--
+        <style>
+            p{
+                color:red;
+                font-size: 20px;
+            }
+            h1{
+                color:rgb(0, 0, 255);
+                font-size: 100px;
+            }
+            h2{
+                color: #008000;
+                font-size: 20px;
+            }
+        </style>
+        Cómo etiqueta: se aplica dentro del body, colocando un selector o elemento a modificar, se coloca llave para iniciar el bloque y se coloca las configuraciones a realizar
+    -->
+    <!--li*5-->
+    <ul>
+        <!--La etiqueta span permite poder dar estilo a un palabra o conjunto de palabras en particular-->
+        <li>Una taza de <span>Harina</span></li>
+        <!--Aquí se crea una clase, para poder dar un estilo a los elementos solamente de esa clase-->
+        <li class="ingrediente-faltante">Trigo</li>
+        <li>Queso</li>
+        <li>Leche</li>
+        <li class="ingrediente-faltante">Azucar</li>
+        <!--Aquí se establece a este componente con un único id, para poder dar un estilo a solamente este elemento con el id-->
+        <li id="ingrediente-secreto">Mantequilla</li>
+    </ul>
+</body>
+</html>

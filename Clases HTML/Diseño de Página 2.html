@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Página 2</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            height: 100%;
+        }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            font-size: calc(1em + 1vw);
+            overflow: hidden;
+        }
+        header, nav, footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            flex: 0 0 10%;
+        }
+        header {
+            /*height: 10%;*/
+            background-color: gray;
+        }
+        nav {
+            /*height: 10%;*/
+            background-color: orange;
+        }
+        footer {
+            /*height: 10%;*/
+            background-color: black;
+            color: white;
+        }
+        main {
+            display: flex;
+            flex: 1;
+            width: 100%;
+            height: 70%;
+        }
+        aside {
+            width: 40%;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            /*flex: [flex-grow] [flex-shrink] [flex-basis];*/
+            flex: 0 0 60%;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            /*
+            Desglose de los valores:
+            
+            flex-grow (crecimiento):
+
+            Define la capacidad del elemento para crecer si es necesario.
+            Valor por defecto: 0.
+            Un valor de 1 indica que el elemento puede crecer para ocupar el espacio disponible en el contenedor.
+
+            flex-shrink (encogimiento):
+
+            Define la capacidad del elemento para encogerse si es necesario.
+            Valor por defecto: 1.
+            Un valor de 0 indica que el elemento no se encogerá cuando el contenedor sea más pequeño que el tamaño total de sus elementos.
+
+            flex-basis (base):
+
+            Define el tamaño inicial del elemento antes de que el espacio disponible se distribuya.
+            Puede ser cualquier valor de tamaño (por ejemplo, px, em, %, auto).
+            Valor por defecto: auto.
+
+            La propiedad flex-basis en CSS define el tamaño inicial de un elemento flexible antes de que se distribuya el espacio disponible dentro de un contenedor flexible. Sin embargo, flex-basis solo se aplica a la dimensión principal del contenedor flexible, es decir, la dimensión definida por la dirección del flex container (ya sea en fila o en columna).
+            
+            Direcciones de Flexbox
+            
+            Si el contenedor es una fila (flex-direction: row;), flex-basis controla el ancho del elemento.
+            
+            Si el contenedor es una columna (flex-direction: column;), flex-basis controla la altura del elemento.
+            */
+        }
+        section, article {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section {
+            background-color: blue;
+            height: 50%;
+        }
+        article {
+            background-color: lightblue;
+            flex: 0 0 50%;
+            
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <header>Encabezado</header>
+    <nav>Menú</nav>
+    <main>
+        <aside>Barra izquierda</aside>
+        <div>
+            <section>Sección 1</section>
+            <article>Artículo 1</article>
+        </div>
+    </main>
+    <footer>Pie</footer>
+</body>
+</html>
+<!--
+<html>
+<style>
+body
+{
+padding:0;
+margin:0;
+width:100%;
+height:100%;
+text-align:center;
+font-family: sans-serif;
+font-weight: bold;
+}
+
+header
+{
+height: 5%;
+width: 100%;
+background-color: gray;
+float:none;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+nav
+{
+height: 10%;
+width: 100%;
+background-color: orange;
+float:none;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+section
+{
+height: 40%;
+width: 80%;
+background-color: blue;
+float:right;
+display:flex;
+justify-content: center;
+align-items: center;
+
+}
+
+article
+{
+height: 40%;
+width: 80%;
+background-color: lightblue;
+float:right;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction:column;
+}
+
+aside
+{
+height: 80%;
+width: 20%;
+background-color: green;
+float: left;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+footer
+{
+height: 5%;
+width: 100%;
+background-color: black;
+position:relative;
+color:white;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+</style>
+
+<header> Encabezado </header>
+<nav> Menú </nav>
+<aside> Barra izquierda</aside>
+<section>Sección 1</section>
+<article>Artículo 1</article>
+<footer> Pie </footer>
+</html>
+-->

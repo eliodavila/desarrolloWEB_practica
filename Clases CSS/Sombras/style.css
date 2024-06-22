@@ -1,0 +1,80 @@
+html{
+    box-sizing: border-box;
+    *,*::before,*::after{
+        box-sizing: inherit;
+    }
+}
+/*
+Desglose del Código
+html { box-sizing: border-box; }
+html: Este selector se refiere al elemento <html> en el documento, que es el contenedor raíz de todo el contenido de la página.
+box-sizing: border-box;: Esta propiedad establece cómo se calculan los anchos y altos de los elementos. Al establecer box-sizing: border-box;, cualquier padding y border del elemento se incluyen en el ancho y alto totales del elemento.
+Por ejemplo, si un div tiene un ancho de 100px, un padding de 20px y un borde de 5px:
+Con box-sizing: content-box (valor por defecto), el ancho total sería 100px (contenido) + 20px (padding) + 5px (border) = 145px.
+Con box-sizing: border-box, el ancho total es 100px y el contenido se ajusta dentro de este ancho, restando el padding y el borde.
+*, *::before, *::after { box-sizing: inherit; }
+*: El selector universal que selecciona todos los elementos en la página.
+*::before y *::after: Estos selectores seleccionan los pseudo-elementos ::before y ::after de todos los elementos. Los pseudo-elementos se utilizan para insertar contenido antes o después del contenido real de un elemento.
+box-sizing: inherit;: Esto establece que todos los elementos, así como sus pseudo-elementos ::before y ::after, heredarán el valor de box-sizing del elemento padre.
+Dado que hemos establecido box-sizing: border-box; en el elemento <html>, todos los elementos de la página heredarán este valor. Esto asegura que el cálculo del ancho y alto de todos los elementos en la página sea consistente y predecible.
+¿Por Qué Usar Esta Técnica?
+Esta técnica es conocida como el "box-sizing reset" y es ampliamente utilizada para evitar problemas y inconsistencias en el diseño de la página. Al establecer box-sizing: border-box; de manera global, se simplifica el manejo del diseño de los elementos, ya que no es necesario ajustar el ancho y alto de los elementos para tener en cuenta el padding y el borde.
+
+Ventajas:
+Consistencia: Todos los elementos se comportan de manera predecible en cuanto a su tamaño.
+Facilidad de diseño: Es más fácil calcular el tamaño de los elementos, especialmente cuando se utilizan con técnicas de diseño de cuadrícula o flexbox.
+Mantenimiento: Reduce la necesidad de ajustar manualmente el tamaño de los elementos para acomodar el padding y el borde.
+*/
+div.box{
+    width: 300px;
+    height: 100%;
+    background-color: #e2e2e2;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 40px 0px #0007;
+    font-family: sans-serif;
+    padding-top: 10px;
+    color: #000;
+    /*
+        box-shadow: 1horizontal 2vertical 3desenfoque 4extensionSombra 5color;
+    */
+}
+h2{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #000;
+    letter-spacing: 5px;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 0px 0px 10px #f92;
+
+}
+p{
+    list-style: none;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 13px;
+    text-shadow: 0px 0px 10px #f92;
+}
+div.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre las imágenes */
+}
+img.foto1{
+    width: 70px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 3px #f92;
+}
+img.foto2{
+    width: 160px;
+    filter: drop-shadow(0px 0px 5px #f92);
+}
+/*
+Hay 3 tipos de desenfoques
+1. text-shadow: se vincula con los textos
+2. box-shadow: se vincula con los elementos y con las imágenes
+3. drop-shadow: se vincula con las imagenes que tienen fondo transparente, es decir que sean formato PNG
+*/

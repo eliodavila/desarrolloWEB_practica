@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 16</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0 1rem;
+        }
+
+        form {
+            max-width: 600px; /* Limita el ancho máximo del formulario */
+            margin: 0 auto; /* Centra el formulario horizontalmente */
+        }
+
+        label, input, textarea, select {
+            width: 100%; /* Asegura que los inputs y textarea ocupen el 100% del ancho del contenedor */
+            display: block; /* Asegura que cada label, input, textarea y select ocupen su propia línea */
+            box-sizing: border-box; /* Incluye el padding y borde en el ancho total */
+            margin-bottom: 10px; /* Añade espacio vertical entre los elementos del formulario */
+        }
+        .formulario_registro {
+            margin: 5vh 0; /* Añade espacio vertical entre los elementos del formulario */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center; /* Centra el contenido horizontalmente */
+        }
+
+        input[type="submit"] {
+            width: auto; /* Permite que el botón ajuste su ancho automáticamente según el contenido */
+            display: inline-block; /* Asegura que el botón se comporte como un elemento en línea pero permite ajustar el tamaño */
+            padding: 10px 20px; /* Agrega espacio interno alrededor del texto del botón: 10px arriba y abajo, 20px a los lados */
+            font-size: 1em; /* Establece el tamaño de la fuente del texto del botón en relación al tamaño base de la fuente del documento */
+        }
+        @media (max-width: 600px) {
+            form {
+                width: 90vw; /* Asegura que el formulario ocupe el 90% del ancho de la ventana en pantallas pequeñas */
+            }
+
+            input[type="submit"] {
+                width: 100%; /* Asegura que el botón ocupe el 100% del ancho del formulario en pantallas pequeñas */
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Formulario de Reserva de Hotel</h1>
+    <form action="" method="">
+        <div class="formulario_registro">
+            <label for="nombre">Nombre<input type="text" name="" id="nombre" required></label>
+        </div>
+        <div class="formulario_registro">
+            <label for="email">Correo Electrónico<input type="email" name="" id="email" required></label>
+        </div>
+        <div class="formulario_registro">
+            <label for="fechaLlegada">Fecha de llegada<input type="date" name="" id="fechaLlegada" required></label>
+        </div>
+        <div class="formulario_registro">
+            <label for="fechaSalida">Fecha de salida<input type="date" name="" id="fechaSalida" required></label>
+        </div>
+        <div class="formulario_registro">
+            <label for="numeroHuesped">Número de huéspedes<input type="number" name="" id="numeroHuesped" min="1" max="20" required></label>
+        </div>
+        <div class="formulario_registro">
+            <label for="numeroHuesped">Tipo de habitación
+                <select name="" id="" required>
+                    <option value="habitacion Individual">Individual</option>
+                    <option value="Habitacion Compartida">Compartida</option>
+                </select>
+            </label>
+        </div>
+        <div class="button-container"> <!-- Contenedor para centrar el botón -->
+            <input type="submit" name="" id="" value="Reservar">
+        </div>
+    </form>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 14</title>
+    <title>Ejercicio 15</title>
     <style>
         form{
             width: 50vw;
@@ -21,27 +21,40 @@
             /*justify-content: center;*/ /* Centra el contenido horizontalmente */
         }
         input[type="submit"] {
-            width: auto;
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1em;
-        }
+    width: auto; /* Permite que el botón ajuste su ancho automáticamente según el contenido */
+    display: inline-block; /* Asegura que el botón se comporte como un elemento en línea pero permite ajustar el tamaño */
+    padding: 10px 20px; /* Agrega espacio interno alrededor del texto del botón: 10px arriba y abajo, 20px a los lados */
+    font-size: 1em; /* Establece el tamaño de la fuente del texto del botón en relación al tamaño base de la fuente del documento */
+}
+        textarea{
+    resize: none;
+    min-width: 100%;
+    min-height: 100px; /*Esto se puede suprimir por rows en el lado del html*/
+    /*max-height: 200px;*/
+    font-family: sans-serif;
+    /*margin-top: 4px;*/
+    /*form-sizing: content;*/
+}
     </style>
 </head>
 <body>
-    <h1>Formulario de Registro</h1>
+    <h1>Formulario de Contacto</h1>
     <form action="" method="">
         <div class="formulario_registro">
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Juan Perez">
+            <input required type="text" name="nombre" id="nombre" placeholder="Juan Perez">
         </div>
         <div class="formulario_registro">
             <label for="email">Correo electrónico</label>
-            <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com">
+            <input required type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com">
         </div>
         <div class="formulario_registro">
-            <label for="contraseña">Contraseña</label>
-            <input type="password" name="contraseña" id="contraseña">
+            <label for="asunto">Asunto</label>
+            <input required type="text" name="asunto" id="asunto">
+        </div>
+        <div class="formulario_registro">
+            <label for="mensaje">Mensaje</label>
+            <textarea rows="8" name="" id="mensaje" placeholder="Deja tu mensaje..." maxlength="140"></textarea>
         </div>
         <div class="button-container"> <!-- Contenedor para centrar el botón -->
             <input type="submit" name="" id="" value="Registrar">

@@ -3,58 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 12</title>
+    <title>Ejercicio 14</title>
     <style>
-        table{
-            border-collapse: collapse;
+        form{
+            width: 50vw;
+            /*margin: 0 auto;*/ /* Centramos el formulario horizontalmente */
         }
-        th, td{
-            border: 1px solid #000;
-            padding: 0px 10px;
+        input{
+            width: 100%;
+            padding: 5px;
         }
-        caption{
-            font-size: 1.5em;
-            font-weight: bolder;
+        div{
+            margin: 5vh;
+        }
+        .button-container {
+            display: flex;
+            /*justify-content: center;*/ /* Centra el contenido horizontalmente */
+        }
+        input[type="submit"] {
+            width: auto;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
-    <table>
-        <caption>ESTUDIANTES UTEPSA</caption>
-        <thead>
-            <tr>
-                <th></th>
-                <th>1ER PARCIAL</th>
-                <th>2DO PARCIAL</th>
-                <th>FINAL</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>JOSÉ VACA</td>
-                <td>20</td>
-                <td>20</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>RICARDO PEREIRA</td>
-                <td>10</td>
-                <td>10</td>
-                <td>20</td>
-            </tr>
-            <tr>
-                <td>VLADI NUÑEZ</td>
-                <td>15</td>
-                <td>16</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>ALAN CUELLAR</td>
-                <td>14</td>
-                <td>10</td>
-                <td>30</td>
-            </tr>
-        </tbody>
-    </table>
+    <h1>Formulario de Registro</h1>
+    <form action="" method="">
+        <div class="formulario_registro">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Juan Perez">
+        </div>
+        <div class="formulario_registro">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com">
+        </div>
+        <div class="formulario_registro">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña">
+        </div>
+        <div class="button-container"> <!-- Contenedor para centrar el botón -->
+            <input type="submit" name="" id="" value="Registrar">
+        </div>
+    </form>
 </body>
 </html>

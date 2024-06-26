@@ -21,12 +21,6 @@
             box-sizing: border-box; /* Incluye el padding y borde en el ancho total */
             margin-bottom: 10px; /* Añade espacio vertical entre los elementos del formulario */
         }
-
-        #edad {
-            width: auto;
-            padding: 5px; /* Añade un poco de espacio interno */
-        }
-
         .formulario_registro {
             margin: 5vh 0; /* Añade espacio vertical entre los elementos del formulario */
         }
@@ -42,19 +36,6 @@
             padding: 10px 20px; /* Agrega espacio interno alrededor del texto del botón: 10px arriba y abajo, 20px a los lados */
             font-size: 1em; /* Establece el tamaño de la fuente del texto del botón en relación al tamaño base de la fuente del documento */
         }
-
-        .radio-group label,
-        .checkbox-group label {
-            display: flex;
-            align-items: center;
-            margin: 5px 0;
-        }
-
-        .radio-group input,
-        .checkbox-group input {
-            margin-right: 10px; /* Añade un margen a la derecha de los inputs de radio y checkbox */
-        }
-
         @media (max-width: 600px) {
             form {
                 width: 90vw; /* Asegura que el formulario ocupe el 90% del ancho de la ventana en pantallas pequeñas */
@@ -67,46 +48,33 @@
     </style>
 </head>
 <body>
-    <h1>Formulario de Encuesta</h1>
+    <h1>Formulario de Reserva de Hotel</h1>
     <form action="" method="">
-        <fieldset>
-            <legend>Información Personal</legend>
-            <div class="formulario_registro">
-                <label for="edad">Edad</label>
-                <input required type="number" name="edad" id="edad" placeholder="" min="0" max="50">
-            </div>
-            <div class="formulario_registro">
-                <label for="genero">Género</label>
-                <div class="radio-group">
-                    <input type="radio" name="genero" value="masculino"><label for="genero">Masculino</label>
-                    <input type="radio" name="genero" value="femenino"><label for="genero">Femenino</label>
-                    <input type="radio" name="genero" value="otro"><label for="genero">Otro</label>
-                </div>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Preferencias</legend>
-            <div class="formulario_registro">
-                <label for="intereses">Intereses</label>
-                <div class="checkbox-group">
-                    <input required type="checkbox" name="intereses" id="" value="deportes"><label for="intereses">Deportes</label>
-                    <input required type="checkbox" name="intereses" id="" value="musica"><label for="intereses">Música</label>
-                    <input required type="checkbox" name="intereses" id="" value="tecnologia"><label for="intereses">Tecnología</label>
-                </div>
-            </div>
-            <div class="formulario_registro">
-                <label for="satisfaccion">Nivel de satisfacción</label>
-                <select name="satisfaccion" id="satisfaccion">
-                    <option value="muy_satisfecho">Muy satisfecho</option>
-                    <option value="satisfecho">Satisfecho</option>
-                    <option value="neutral">Neutral</option>
-                    <option value="insatisfecho">Insatisfecho</option>
-                    <option value="muy_insatisfecho">Muy insatisfecho</option>
+        <div class="formulario_registro">
+            <label for="nombre">Nombre<input type="text" name="" id="nombre" required></label>
+        </div>
+        <div class="formulario_registro">
+            <label for="email">Correo Electrónico<input type="email" name="" id="email" required></label>
+        </div>
+        <div class="formulario_registro">
+            <label for="fechaLlegada">Fecha de llegada<input type="date" name="" id="fechaLlegada" required></label>
+        </div>
+        <div class="formulario_registro">
+            <label for="fechaSalida">Fecha de salida<input type="date" name="" id="fechaSalida" required></label>
+        </div>
+        <div class="formulario_registro">
+            <label for="numeroHuesped">Número de huéspedes<input type="number" name="" id="numeroHuesped" min="1" max="20" required></label>
+        </div>
+        <div class="formulario_registro">
+            <label for="numeroHuesped">Tipo de habitación
+                <select name="" id="" required>
+                    <option value="habitacion Individual">Individual</option>
+                    <option value="Habitacion Compartida">Compartida</option>
                 </select>
-            </div>
-        </fieldset>
+            </label>
+        </div>
         <div class="button-container"> <!-- Contenedor para centrar el botón -->
-            <input type="submit" name="" id="" value="Enviar">
+            <input type="submit" name="" id="" value="Reservar">
         </div>
     </form>
 </body>

@@ -3,37 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 18</title>
+    <title>Ejercicio 19</title>
     <style>
-        html{
-            background-color: red;
-            font-size: #fff;
-        }
-        body{
-            color: #fff;
-            font-size: 20px;
-        }
         h1{
             border-bottom:2px solid #000;
         }
         div{
-            background-color: hsl(207, 98%, 49%);
-            width:100%;
-        }
-        .texto_color{
-            color:rgb(255, 255, 0);
+            display:flex;
+            box-sizing: border-box;
         }
         p{
-            color:rgb(0, 128, 0);
+            margin:0;
+            padding:0;
+        }
+        .caja01{
+            border: 2px solid black;
+        }
+        .caja02{
+            border: 2px dashed black;
+        }
+        .caja03{
+            border: 2px dotted black;
+        }
+        .caja04{
+            border: 2px double black;
         }
     </style>
 </head>
 <body>
-    <h1>Background color y border radius</h1>
-    <h2>EJI</h2>
+    <h1>BORDES MODELO CAJA</h1>
+    <h2>EJ2</h2>
     <div>
-        <h2 class="texto_color">Bienvenidos a los ejercicios de CSS</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, quidem.</p>
+        <div class="caja01">
+            <p>Borde sólido</p>
+        </div>
+        <div class="caja02">
+            <p>Borde discontinuo</p>
+        </div>
+        <div class="caja03">
+            <p>Borde punteado</p>
+        </div>
+        <div class="caja04">
+            <p>Borde doble</p>
+        </div>
     </div>
 </body>
 </html>

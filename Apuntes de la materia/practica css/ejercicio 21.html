@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+        h1 {
+            border-bottom: 2px solid #000;
+        }
+        ul {
+            list-style: none; /* Eliminar viñetas predeterminadas */
+            padding: 0;
+            padding-left: 30px; /* Espacio para los puntos fuera del bloque gris */
+        }
+        li {
+            position: relative; /* Necesario para el pseudo-elemento */
+            margin-bottom: 5px;
+        }
+        div {
+            padding: 8px;
+            background-color: rgb(128 128 128 / 50%); /* Color gris para el fondo */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        /*Es un seudoelemento que coloca antes del elemento li*/
+        li::before {
+            content: "•"; /* Añadir viñeta personalizada */
+            font-size: 24px;
+            position: absolute;
+            left: -20px; /* Posiciona el puntito fuera del bloque gris */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        li:nth-child(odd)::before {
+            color: green; /* Color verde para viñetas de elementos impares */
+        }
+        li:nth-child(even)::before {
+            color: orange; /* Color naranja para viñetas de elementos pares */
+        }
+        li:nth-child(odd) div {
+            color: green; /* Color verde para el texto de elementos impares */
+        }
+        li:nth-child(even) div {
+            color: orange; /* Color naranja para el texto de elementos pares */
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista anidada</h1>
+    <h2>EJ10</h2>
+    <ul>
+        <li><div>Manzana</div></li>
+        <li><div>Espinaca</div></li>
+        <li><div>Platano</div></li>
+        <li><div>Zanahoria</div></li>
+        <li><div>Naranja</div></li>
+        <li><div>Brocoli</div></li>
+    </ul>
+</body>
+</html>
+<!--
+Pseudoelementos
+Resumen
+Al igual que las Pseudo-classes, los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte concreta del documento. Por ejemplo, el pseudoelemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.
+
+Sintaxis
+selector::pseudo-elemento { propiedad: valor; }
+Lista de pseudoelementos
+::after
+::before
+::first-letter
+::first-line
+::selection
+::backdrop
+::placeholder Experimental
+::marker Experimental
+::spelling-error Experimental
+::grammar-error Experimental
+Notas
+De vez en cuando se utilizan dos puntos dobles (::) en vez de solo uno (:). Esto forma parte de CSS3 y de un intento para distinguir pseudo-elementos de pseudo-clases.
+
+
+
+
+Pseudo-classes
+Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por ejemplo, :hover aplicará un estilo cuando el usuario haga hover sobre el elemento especificado por el selector.
+
+div:hover {
+  background-color: #F89B4D;
+}
+Las pseudoclases, junto con los pseudoelementos, permiten aplicar un estilo a un elemento no sólo en relación con el contenido del árbol de documento, sino también en relación a factores externos como el historial del navegador (:visited, por ejemplo), el estado de su contenido (como :checked en algunos elementos de formulario), o la posición del ratón (como :hover que permite saber si el ratón está encima de un elemento o no).
+
+Nota: En lugar de usar pseudoclases, pseudo-elements puede usarse para dar estilo a una parte específica de un elemento.
+
+Sintaxis
+selector:pseudoclase { propiedad: valor; }
+Al igual que las clases, se pueden concatenar la cantidad de pseudoclases que se deseen en un selector.
+
+Indice de las pseudo-clases estándar
+:active
+:checked
+:default
+:dir()
+:disabled
+:empty
+:enabled
+:first
+:first-child
+:first-of-type
+:fullscreen
+:focus
+:hover
+:indeterminate
+:in-range
+:invalid
+:lang()
+:last-child
+:last-of-type
+:left
+:link
+:not()
+:nth-child()
+:nth-last-child()
+:nth-last-of-type()
+:nth-of-type()
+:only-child
+:only-of-type
+:optional
+:out-of-range
+:read-only
+:read-write
+:required
+:right
+:root
+:scope
+:target
+:valid
+:visited
+-->

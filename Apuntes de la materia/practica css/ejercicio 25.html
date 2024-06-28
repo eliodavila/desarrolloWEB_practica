@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 25</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+        body {
+            background-color: #FFF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+        }
+        h1, h2 {
+            border-bottom: 2px solid #000;
+            margin: 0;
+            padding-bottom: 10px;
+            width: 100%; /* Ancho completo */
+        }
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%; /* Ancho completo */
+            margin: 0 auto; /* Centrado horizontal */
+        }
+        .elemento {
+            background-color: green; /* Fondo verde */
+            color: white; /* Color del texto */
+            font-size: 1.5rem; /* Tamaño del texto */
+            margin: 10px 0; /* Espacio entre los elementos */
+            padding: 20px;
+            width: 100%; /* Ancho completo del contenedor */
+            text-align: center; /* Centrado del texto */
+        }
+    </style>
+</head>
+<body>
+    <h1>FLEX</h1>
+    <h2>EJ6</h2>
+    <div class="contenedor">
+        <div class="elemento">Elemento 1</div>
+        <div class="elemento">Elemento 2</div>
+        <div class="elemento">Elemento 3</div>
+    </div>
+</body>
+</html>

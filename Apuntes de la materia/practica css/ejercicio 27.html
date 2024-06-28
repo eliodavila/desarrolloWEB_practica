@@ -16,57 +16,64 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-
             height: 100vh; /* Altura de la pantalla completa */
             width: 100vw;
             box-sizing: border-box;
         }
         h1, h2 {
             border-bottom: 2px solid #000;
-            margin: 20px 0;
+            margin: 0;
             padding-bottom: 10px;
             width: 100%; /* Ancho completo */
-            text-align: center;
         }
         .contenedor {
             display: flex;
-            width: 100%;
-            max-width: 600px; /* Tamaño máximo del contenedor */
-            margin: 0 auto; /* Centrado horizontal */
-            padding: 10px;
+            justify-content:space-between;
+            width: 100%; /* Ancho completo */
+            padding: 0;
             box-sizing: border-box;
+            background-color: rgb(0, 0, 255);
         }
         .elemento {
-            background-color: blue; /* Fondo azul */
+            background-color: rgb(0, 0, 139); /* Fondo azul */
             color: white; /* Color del texto */
             font-size: 1.5rem; /* Tamaño del texto */
             padding: 20px;
             text-align: center; /* Centrado del texto */
             border-radius: 5px; /* Bordes redondeados */
-            flex: 1; /* Ocupa todo el espacio disponible */
             margin: 5px; /* Espacio entre los elementos */
+            flex: 0 1 auto; /* Ocupa solo el espacio necesario */
+            /*
+            Shorthand de la sintaxis
+            flex-grow, flex-shrink, y flex-basis
+            */
         }
 
         /* Media Queries */
         @media (max-width: 800px) {
             .contenedor {
-                flex-direction: column; /* Apila los elementos verticalmente */
+                flex-direction: row; /* Apila los elementos horizontalmente */
+                justify-content:flex-end;
+                background-color: rgb(0, 255, 0);
             }
             .elemento {
-                background-color: green; /* Fondo verde */
-                margin: 10px 0; /* Espacio entre los elementos */
+                background-color: rgb(0, 0, 139); /* Fondo verde */
+                margin: 10px 5px; /* Espacio entre los elementos */
+                flex: 0 1 auto; /* Ocupa solo el espacio necesario */
             }
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 600px) {
             .contenedor {
                 flex-direction: row; /* Apila los elementos horizontalmente */
-                flex-wrap: wrap; /* Permite el ajuste de elementos en nuevas filas */
+                justify-content:center;
+                background-color: rgb(255, 0, 0);
             }
             .elemento {
-                background-color: red; /* Fondo rojo */
-                width: calc(33.33% - 10px); /* Ancho de un tercio menos el margen */
+                background-color: green; /* Fondo verde */
+                width: auto; /* Ancho automático */
                 margin: 5px; /* Espacio entre los elementos */
+                flex: 0 1 auto; /* Ocupa solo el espacio necesario */
             }
         }
     </style>
